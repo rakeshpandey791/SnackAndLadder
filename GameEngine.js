@@ -121,7 +121,7 @@ class GameEngine {
                 this.SL.snack.forEach((el)=>{
                     if(el.pos === player.curPos){
                         player.curPos = el.newPos;
-                        this.logger.addLog('snack', `${player.name}: Snack bite at position ${el.pos}`);
+                        this.logger.addLog('snack', `${player.name}: Snack bite at position ${el.pos}, New Position: ${player.curPos}`);
                         isContinue = true;
                     }
                 });
@@ -133,7 +133,7 @@ class GameEngine {
                 this.SL.ladder.forEach((el)=>{
                     if(el.pos === player.curPos){
                         player.curPos = el.newPos;
-                        this.logger.addLog('ladder', `${player.name}: Ladder at position ${el.pos}`);
+                        this.logger.addLog('ladder', `${player.name}: Ladder at position ${el.pos}, New Position: ${player.curPos}`);
                     }
                 });
                 this.playerQueue.push(player);
