@@ -33,8 +33,8 @@ class Player {
             {id: 1, name: 'Rakesh', curPos: 1},
             {id: 2, name: 'Ankur', curPos: 1},
             {id: 3, name: 'Jay', curPos: 1},
-            {id: 4, name: 'Manoj', curPos: 1},
-            {id: 5, name: 'Rahul', curPos: 1},
+            // {id: 4, name: 'Manoj', curPos: 1},
+            // {id: 5, name: 'Rahul', curPos: 1},
             {id: 6, name: 'Jitendra', curPos: 1},
         ];
         this.winners = [];
