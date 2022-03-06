@@ -105,6 +105,7 @@ class GameEngine {
                 this.playerQueue.push(player);
                 continue;
             }
+            this.logger.addLog(undefined, `${player.name}: Position increase by ${rollNum}, New Position: ${newPos}`);
             
             let isContinue = false;
             if(player.curPos === 100){
