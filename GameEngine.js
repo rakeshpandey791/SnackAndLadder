@@ -10,7 +10,7 @@ class Logger {
             case 'won':
                 child.style.color = '#0c6e0c';
                 break;
-            case 'snack':
+            case 'snake':
                 child.style.color = 'orange';
                 break;
             case 'ladder':
@@ -121,7 +121,7 @@ class GameEngine {
                 this.SL.snack.forEach((el)=>{
                     if(el.pos === player.curPos){
                         player.curPos = el.newPos;
-                        this.logger.addLog('snack', `${player.name}: Snack bite at position ${el.pos}, New Position: ${player.curPos}`);
+                        this.logger.addLog('snake', `${player.name}: Snake bite at position ${el.pos}, New Position: ${player.curPos}`);
                         isContinue = true;
                     }
                 });

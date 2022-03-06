@@ -25,6 +25,15 @@
         h3{
             padding-left: 45px;
         }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .config {
+            position: fixed;
+            right: 15%;
+            top: 1%;
+        }
     </style>
     <script defer src="./GameEngine.js"></script>
 </head>
@@ -32,7 +41,17 @@
     <h1>Game Log</h1>
     <h3 id="winners"></h3>
     <h3 id="loser"></h3>
-    <ul id="gLogContainer">
-    </ul>
+    <div class="container">
+        <div class="logs">
+            <ul id="gLogContainer">
+            </ul>
+        </div>
+        <div class="config">
+            <h1>Configurations</h1>
+            <h3>Snake config</h3>
+            <h3>Ladder config</h3>
+        </div>
+    </div>
+    
 </body>
 </html>
